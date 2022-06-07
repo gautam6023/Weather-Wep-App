@@ -77,11 +77,23 @@ body {
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-#searchBox > button {
+
+.location {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+}
+#searchBox > .search {
   width: 160px;
   height: 40px;
   border-radius: 5px;
   border: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
   background-color: rgb(49, 184, 238);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

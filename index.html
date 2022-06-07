@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"
+    />
     <!-- <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
     </style> -->
@@ -22,6 +27,9 @@
         placeholder="Enter city name"
         class="searchString"
       />
+      <button class="location" onclick="getLocation()">
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
       <button id="getWeather" class="search" onclick="getWeather()">
         Get Weather
       </button>
