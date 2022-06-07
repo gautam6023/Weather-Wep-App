@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+    </style> -->
+    <script
+      src="https://kit.fontawesome.com/f5664c1180.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="searchBox">
+      <input
+        type="text"
+        id="city"
+        placeholder="Enter city name"
+        class="searchString"
+      />
+      <button id="getWeather" class="search" onclick="getWeather()">
+        Get Weather
+      </button>
+    </div>
+    <div id="showData">
+      <div id="days"></div>
+      <div id="showWeather">
+        <div id="data">
+          <div>
+            <p>
+              <span class="icon"
+                ><i class="fa-solid fa-place-of-worship"></i
+              ></span>
+              Place : <span id="place"></span>
+            </p>
+            <p>
+              <span class="icon"><i class="fa-solid fa-calendar-day"></i></span>
+              Day : <span id="today"></span>
+            </p>
+            <p>
+              <span class="icon"><i class="fa-solid fa-droplet"></i>°</span>
+              Dew point : <span id="dewP"></span>
+            </p>
+
+            <p>
+              <span class="icon"><i class="fa-solid fa-cloud"></i></span>
+              Clouds :
+              <span id="cloud"></span>
+            </p>
+
+            <div id="dayTemp">
+              <p>
+                <span
+                  ><img
+                    src="https://img.icons8.com/external-kosonicon-lineal-color-kosonicon/30/000000/external-temperatures-temperature-kosonicon-lineal-color-kosonicon.png"
+                /></span>
+                Temparture :
+              </p>
+              <p>
+                <span class="icon"
+                  ><i class="fa-solid fa-temperature-high"></i
+                ></span>
+                Max :
+                <span id="maxTemp"></span>
+              </p>
+              <p>
+                <span class="icon"
+                  ><i class="fa-solid fa-temperature-low"></i
+                ></span>
+                Min : <span id="minTemp"></span>
+              </p>
+            </div>
+
+            <p>
+              <span class="icon"><i class="fa-solid fa-wind"></i></span>
+              Wind : <span id="wind"></span>
+            </p>
+            <p>
+              <span class="icon">
+                <i class="fa-solid fa-droplet"></i>
+              </span>
+              Humidity : <span id="humidity"></span>
+            </p>
+            <p>
+              <span class="icon"
+                ><img
+                  src="https://img.icons8.com/office/26/000000/sunrise--v2.png"
+              /></span>
+              Sunrise : <span id="sunRise"></span>
+            </p>
+            <p>
+              <span class="icon"
+                ><img
+                  src="https://img.icons8.com/external-kmg-design-flat-kmg-design/26/000000/external-sunset-summer-kmg-design-flat-kmg-design.png"
+              /></span>
+              Sunset : <span id="sunSet"></span>
+            </p>
+            <p>
+              <span class="icon"
+                ><img
+                  src="https://img.icons8.com/windows/26/000000/atmospheric-pressure.png"
+              /></span>
+              Pressure : <span id="pressure"></span>
+            </p>
+          </div>
+        </div>
+        <div id="map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                id="gmap_canvas"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://2piratebay.org"></a><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 600px;
+                  width: 600px;
+                }</style
+              ><a href="https://www.embedgooglemap.net"
+                >google maps iframe code generator</a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="showData"></div>
+  </body>
+</html>
+
+<script src="./index.js"></script>

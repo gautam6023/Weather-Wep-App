@@ -1,0 +1,132 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#days {
+  height: auto;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 15px;
+}
+#days > div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px;
+  /* background-color: rgb(114, 166, 224); */
+}
+
+#days > div:hover {
+  background-color: rgb(152, 225, 247);
+  cursor: pointer;
+}
+.daysIcon {
+  color: rgb(251, 185, 1);
+  font-size: 30px;
+}
+#days > div > p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#days > div > p:first-child {
+  font-weight: bold;
+}
+
+#days > div > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+#showWeather {
+  height: 600px;
+  width: 60%;
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+#searchBox {
+  width: 62%;
+  display: flex;
+  gap: 15px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  /* background-color: black; */
+  margin-bottom: 15px;
+}
+#searchBox > input {
+  flex-grow: 1;
+  height: 36px;
+  border-radius: 5px;
+  border: 0;
+  text-indent: 20px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#searchBox > button {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(49, 184, 238);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#searchBox > input:focus {
+  outline: none;
+}
+#data {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+#data p {
+  margin: 0;
+  line-height: 45px;
+}
+#data > div > p {
+  font-size: 18px;
+}
+#data > div > p > span:last-child,
+#maxTemp,
+#minTemp {
+  font-weight: 500;
+  font-size: 22px;
+  color: rgb(231, 63, 12);
+}
+.icon {
+  padding: 5px;
+  color: black;
+}
+
+#showWeather > div:last-child {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 15px;
+}
+#gmap_canvas {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+.gmap_canvas {
+  height: 100%;
+  width: 100%;
+}
